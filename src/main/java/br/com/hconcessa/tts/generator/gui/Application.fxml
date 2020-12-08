@@ -58,35 +58,33 @@
                             <MenuItem mnemonicParsing="false" text="Action 2" />
                           </items>
                         </SplitMenuButton>
-                        <TextField fx:id="audioPitch" prefHeight="42.0" prefWidth="75.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                        <TextField fx:id="audioSpeed" prefHeight="42.0" prefWidth="75.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                        <TextField fx:id="audioVolume" prefHeight="42.0" prefWidth="75.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                        <TextField fx:id="audioChannels" prefHeight="42.0" prefWidth="75.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                        <TextField fx:id="audioCodec" prefHeight="42.0" prefWidth="75.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-                        <TextField fx:id="audioSampleRate" prefHeight="42.0" prefWidth="75.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-                        <TextField fx:id="audioBitRate" prefHeight="42.0" prefWidth="75.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
-                        <TextField alignment="CENTER" editable="false" prefHeight="42.0" prefWidth="75.0" text="-" GridPane.columnIndex="1" GridPane.rowIndex="8" />
-                        <TextField alignment="CENTER" editable="false" prefHeight="42.0" prefWidth="75.0" text="-" GridPane.columnIndex="1" GridPane.rowIndex="9" />
-                        <TextField alignment="CENTER" editable="false" prefHeight="42.0" prefWidth="75.0" text="-" GridPane.columnIndex="1" GridPane.rowIndex="10" />
-                        <TextField alignment="CENTER" editable="false" prefHeight="42.0" prefWidth="75.0" text="-" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                        <TextField fx:id="txtAudioPitch" alignment="CENTER" prefHeight="42.0" prefWidth="75.0" text="1.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextField fx:id="txtAudioSpeed" alignment="CENTER" prefHeight="42.0" prefWidth="75.0" text="1.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <TextField fx:id="txtAudioVolume" alignment="CENTER" disable="true" editable="false" prefHeight="42.0" prefWidth="75.0" text="-" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <TextField fx:id="txtAudioChannels" alignment="CENTER" disable="true" editable="false" prefHeight="42.0" prefWidth="75.0" text="-" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <TextField fx:id="txtAudioCodec" alignment="CENTER" disable="true" editable="false" prefHeight="42.0" prefWidth="75.0" text="-" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <TextField fx:id="txtAudioSampleRate" alignment="CENTER" disable="true" editable="false" prefHeight="42.0" prefWidth="75.0" text="-" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                        <TextField fx:id="txtAudioBitRate" alignment="CENTER" disable="true" editable="false" prefHeight="42.0" prefWidth="75.0" text="-" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                        <TextField alignment="CENTER" disable="true" editable="false" prefHeight="42.0" prefWidth="75.0" text="-" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                        <TextField alignment="CENTER" disable="true" editable="false" prefHeight="42.0" prefWidth="75.0" text="-" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                        <TextField alignment="CENTER" disable="true" editable="false" prefHeight="42.0" prefWidth="75.0" text="-" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                        <TextField alignment="CENTER" disable="true" editable="false" prefHeight="42.0" prefWidth="75.0" text="-" GridPane.columnIndex="1" GridPane.rowIndex="11" />
                      </children>
                   </GridPane>
                </children>
             </AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="398.0">
                <children>
-                  <TextArea fx:id="txtToTts" layoutX="16.0" layoutY="38.0" prefHeight="168.0" prefWidth="336.0" promptText="Write Text To Speech Here" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="35.0">
+                  <TextArea fx:id="txtToTts" layoutX="16.0" layoutY="38.0" prefHeight="130.0" prefWidth="326.0" promptText="Write Text To Speech Here" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="35.0">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </TextArea>
-                  <Button fx:id="buttonSaveAs" layoutX="258.0" layoutY="248.0" mnemonicParsing="false" onAction="#handleSaveAs" style="-fx-pref-width: 80px; -fx-pref-height: 20px;" text="Save As..." AnchorPane.rightAnchor="20.0" />
-                  <Button fx:id="buttonGo" layoutX="145.0" layoutY="248.0" mnemonicParsing="false" onAction="#handleGo" style="-fx-pref-width: 80px; -fx-pref-height: 20px;" text="Go" />
-                  <Label layoutX="14.0" layoutY="331.0" prefHeight="25.0" prefWidth="111.0" text="TTS FILE DIR         :" />
-                  <Label layoutX="14.0" layoutY="359.0" prefHeight="25.0" prefWidth="111.0" text="OUTPUT FILE DIR :" />
-                  <CheckBox fx:id="chkUseFfmpeg" layoutX="16.0" layoutY="216.0" mnemonicParsing="false" onAction="#handleUseFfmpeg" text="Convert with FFMEG" />
-                  <Label fx:id="ttsDir" layoutX="125.0" layoutY="331.0" prefHeight="25.0" prefWidth="265.0" text="..." />
-                  <Label fx:id="outputDir" layoutX="122.0" layoutY="359.0" prefHeight="25.0" prefWidth="265.0" text="..." />
+                  <Button fx:id="buttonGo" layoutX="150.0" layoutY="174.0" mnemonicParsing="false" onAction="#handleGo" style="-fx-pref-width: 80px; -fx-pref-height: 20px;" text="Go" AnchorPane.rightAnchor="20.0" />
+                  <Label layoutX="14.0" layoutY="359.0" prefHeight="25.0" prefWidth="111.0" text="OUTPUT FILE DIR :" AnchorPane.bottomAnchor="10.0" />
+                  <CheckBox fx:id="chkUseFfmpeg" disable="true" layoutX="14.0" layoutY="178.0" mnemonicParsing="false" onAction="#handleUseFfmpeg" text="Convert with FFMEG" />
+                  <Label fx:id="outputDir" layoutX="122.0" layoutY="359.0" prefHeight="25.0" prefWidth="213.0" text="..." AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="20.0" />
+                  <TextArea fx:id="logTxt" editable="false" layoutY="205.0" onInputMethodTextChanged="#handleTxtLog" prefHeight="151.0" prefWidth="326.0" AnchorPane.bottomAnchor="42.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="205.0" />
                </children>
             </AnchorPane>
         </items>
