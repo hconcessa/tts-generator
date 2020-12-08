@@ -13,7 +13,8 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 	
-	private final String TITLE_APPLICATION = "TTS Generator";
+	private final String VERSION_APPLICATION = "1.0.0";
+	private final String TITLE_APPLICATION = "TTS Generator " + VERSION_APPLICATION;
 	
 	private Stage primaryStage;
 	private AnchorPane application;

@@ -153,6 +153,7 @@ public class AudioController {
 		String baseDir = FileUtil.getDirPath();
 		
 		getSimpleParam();
+		synthesizer.setLanguage("pt-br");
 		synthesizer.setSpeed(this.speed);
 		synthesizer.setPitch(this.pitch);
 		
